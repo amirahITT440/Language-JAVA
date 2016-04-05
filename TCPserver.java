@@ -9,7 +9,8 @@ class TCPserver
 		String data = "TCP server";
 		try
 		{
-			ServerSocket srvr = new ServerSocket(7890);
+			ServerSocket srvr = new ServerSocket(50000);
+			System.out.print("Server ok");
 			Socket skt = srvr.accept();
 			System.out.println("Server has connected\n");
 			PrintWriter out = new PrintWriter(skt.getOutputStream(), true);

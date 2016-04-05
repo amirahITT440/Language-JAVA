@@ -8,7 +8,7 @@ class TCPclient
 	{
 		try
 		{
-			Socket skt = new Socket("localhost", 7890);
+			Socket skt = new Socket("localhost", 50000);
 			BufferedReader in = new BufferedReader(new InputStreamReader
 						(skt.getInputStream()));
 			System.out.print("Received string : ");
